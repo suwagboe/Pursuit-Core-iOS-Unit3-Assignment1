@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
 
     var allUsers = [UserInfo](){
         didSet{
@@ -22,13 +23,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        searchBar.delegate = self
         loadData()
     }
     
     func loadData() {
         allUsers = UserInfo.getUserInfo()
     }
-   
+    
+    func filterdText(_ searchText: String) {
+        
+        guard !searchText.isEmpty else {
+            return
+        }
+        
+        allUsers = UserInfo.getUserInfo().filter{ $0.name.first.lowercased().contains(searchText.lowercased())
+            
+        // how would you do it for both first and last name??
+        }
+    }
+    // prepare for segue function should go here..    
 }
 
 
@@ -52,6 +66,27 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = "\(firstName) \(lastName)"
         
         return cell
+    }
+    
+}
+
+extension ViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("search bar search button clicked..")
+        
+        searchBar.resignFirstResponder()
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            print("inside of text DidChange..")
+            loadData()
+            return
+        }
+        
+        //filterdText(searchText)
     }
     
 }
