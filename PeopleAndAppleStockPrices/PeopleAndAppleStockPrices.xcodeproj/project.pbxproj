@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5520E8BF23A035850008E75D /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520E8BE23A035850008E75D /* MainDetailViewController.swift */; };
 		55CE80FA239F11110062D888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80F9239F11110062D888 /* ViewController.swift */; };
 		55CE80FC239F11540062D888 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80FB239F11540062D888 /* secondViewController.swift */; };
 		55CE80FE239F1D8E0062D888 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80FD239F1D8E0062D888 /* UserInfo.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5520E8BE23A035850008E75D /* MainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailViewController.swift; sourceTree = "<group>"; };
 		55CE80F9239F11110062D888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55CE80FB239F11540062D888 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		55CE80FD239F1D8E0062D888 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
 				55CE80F9239F11110062D888 /* ViewController.swift */,
+				5520E8BE23A035850008E75D /* MainDetailViewController.swift */,
 				55CE80FD239F1D8E0062D888 /* UserInfo.swift */,
 				55CE80FB239F11540062D888 /* secondViewController.swift */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CE80FE239F1D8E0062D888 /* UserInfo.swift in Sources */,
+				5520E8BF23A035850008E75D /* MainDetailViewController.swift in Sources */,
 				55CE80FA239F11110062D888 /* ViewController.swift in Sources */,
 				55CE80FC239F11540062D888 /* secondViewController.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,

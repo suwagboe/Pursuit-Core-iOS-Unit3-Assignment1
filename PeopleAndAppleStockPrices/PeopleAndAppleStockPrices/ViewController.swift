@@ -36,13 +36,21 @@ class ViewController: UIViewController {
         guard !searchText.isEmpty else {
             return
         }
-        
         allUsers = UserInfo.getUserInfo().filter{ $0.name.first.lowercased().contains(searchText.lowercased())
-            
         // how would you do it for both first and last name??
         }
     }
-    // prepare for segue function should go here..    
+    // prepare for segue function should go here..
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let DVController = segue.destination as? MainDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("the segue to the details controller does not work.. ")
+        }
+        
+        DVController.actualUser = allUsers[indexPath.row]
+        
+    }
+    
 }
 
 
