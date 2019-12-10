@@ -10,6 +10,8 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+    // should filter the stocks ..
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -19,6 +19,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-hN-Qcq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8LE-zg-8jc">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8LE-zg-8jc" id="CoZ-Cp-Zcn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -194,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="-19" y="-202"/>
         </scene>
-        <!--Item-->
+        <!--TheOtherOne-->
         <scene sceneID="aU5-Zd-tAb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n2M-Nu-z6t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ghL-TT-mBi"/>
+                    <tabBarItem key="tabBarItem" title="TheOtherOne" id="ghL-TT-mBi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ghd-K8-UXd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -213,11 +223,11 @@
             </objects>
             <point key="canvasLocation" x="1081" y="204"/>
         </scene>
-        <!--Item-->
+        <!--UserInfo-->
         <scene sceneID="ojF-3W-KzE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z49-1V-MGz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qq4-jc-EVt"/>
+                    <tabBarItem key="tabBarItem" title="UserInfo" id="qq4-jc-EVt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ESy-Bx-B1K">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
