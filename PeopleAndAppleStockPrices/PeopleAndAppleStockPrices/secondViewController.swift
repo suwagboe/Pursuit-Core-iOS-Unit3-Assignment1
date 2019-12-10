@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  secondViewController.swift
 //  PeopleAndAppleStockPrices
 //
 //  Created by Pursuit on 12/9/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class secondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
