@@ -7,9 +7,15 @@
 //
 
 import XCTest
-@testable import PeopleAndAppleStockPrices // to get access to the other folder
+//MARK: please dont forget
+//to get access to the other folder PLEASE DONT FORGET THIS!!!
+@testable import PeopleAndAppleStockPrices
+
 class PeopleAndAppleStockPricesTests: XCTestCase {
 
+let filename = "applstockinfo"
+let ext = "json"
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -43,5 +49,18 @@ class PeopleAndAppleStockPricesTests: XCTestCase {
         XCTAssertEqual(expectedfirstUser, firstUser)
     }
     
+    
+    func testReadingAppStockData() {
+        //arrange
+       // let sut = when should I use sut again
+        
+       let data = Bundle.main.url(forResource: filename, withExtension: ext)
+        
+        // this will check if there is any data inside of the file at all
+        XCTAssertNotNil(data)
+     
+    }
+    
+    // testdrivedevelopment
     
 }

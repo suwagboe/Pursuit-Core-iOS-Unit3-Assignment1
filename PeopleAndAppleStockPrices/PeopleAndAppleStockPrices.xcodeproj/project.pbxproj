@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5520E8BF23A035850008E75D /* MainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520E8BE23A035850008E75D /* MainDetailViewController.swift */; };
 		5520E8C723A0419C0008E75D /* PeopleAndAppleStockPricesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520E8C623A0419C0008E75D /* PeopleAndAppleStockPricesTests.swift */; };
+		5520E8CF23A04B520008E75D /* SecondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520E8CE23A04B520008E75D /* SecondDetailViewController.swift */; };
+		5520E8D123A04BDF0008E75D /* StocksInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520E8D023A04BDF0008E75D /* StocksInfo.swift */; };
 		55CE80FA239F11110062D888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80F9239F11110062D888 /* ViewController.swift */; };
 		55CE80FC239F11540062D888 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80FB239F11540062D888 /* secondViewController.swift */; };
 		55CE80FE239F1D8E0062D888 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE80FD239F1D8E0062D888 /* UserInfo.swift */; };
@@ -35,6 +37,8 @@
 		5520E8C423A0419C0008E75D /* PeopleAndAppleStockPricesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAndAppleStockPricesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5520E8C623A0419C0008E75D /* PeopleAndAppleStockPricesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndAppleStockPricesTests.swift; sourceTree = "<group>"; };
 		5520E8C823A0419C0008E75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5520E8CE23A04B520008E75D /* SecondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailViewController.swift; sourceTree = "<group>"; };
+		5520E8D023A04BDF0008E75D /* StocksInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksInfo.swift; sourceTree = "<group>"; };
 		55CE80F9239F11110062D888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55CE80FB239F11540062D888 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		55CE80FD239F1D8E0062D888 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -75,6 +79,26 @@
 			path = PeopleAndAppleStockPricesTests;
 			sourceTree = "<group>";
 		};
+		5520E8D223A04BF70008E75D /* UserStuff */ = {
+			isa = PBXGroup;
+			children = (
+				55CE80FD239F1D8E0062D888 /* UserInfo.swift */,
+				5520E8BE23A035850008E75D /* MainDetailViewController.swift */,
+				55CE80F9239F11110062D888 /* ViewController.swift */,
+			);
+			path = UserStuff;
+			sourceTree = "<group>";
+		};
+		5520E8D323A04C1A0008E75D /* StockInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5520E8D023A04BDF0008E75D /* StocksInfo.swift */,
+				55CE80FB239F11540062D888 /* secondViewController.swift */,
+				5520E8CE23A04B520008E75D /* SecondDetailViewController.swift */,
+			);
+			path = StockInfo;
+			sourceTree = "<group>";
+		};
 		577E5BDF21BA8BA10083EB97 = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
-				55CE80F9239F11110062D888 /* ViewController.swift */,
-				5520E8BE23A035850008E75D /* MainDetailViewController.swift */,
-				55CE80FD239F1D8E0062D888 /* UserInfo.swift */,
-				55CE80FB239F11540062D888 /* secondViewController.swift */,
+				5520E8D323A04C1A0008E75D /* StockInfo */,
+				5520E8D223A04BF70008E75D /* UserStuff */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
 			);
@@ -238,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5520E8CF23A04B520008E75D /* SecondDetailViewController.swift in Sources */,
 				55CE80FE239F1D8E0062D888 /* UserInfo.swift in Sources */,
 				5520E8BF23A035850008E75D /* MainDetailViewController.swift in Sources */,
+				5520E8D123A04BDF0008E75D /* StocksInfo.swift in Sources */,
 				55CE80FA239F11110062D888 /* ViewController.swift in Sources */,
 				55CE80FC239F11540062D888 /* secondViewController.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
