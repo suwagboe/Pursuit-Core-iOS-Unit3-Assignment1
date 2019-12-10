@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        loadData()
     }
     
     func loadData() {
@@ -45,10 +46,10 @@ extension ViewController: UITableViewDataSource {
 
         let selectedUser = allUsers[indexPath.row]
         
-        let firstName = selectedUser.name.first
-        let lastName = selectedUser.name.last
+        let firstName = selectedUser.name.first.capitalized
+        let lastName = selectedUser.name.last.capitalized
         
-        cell.textLabel?.text = "\(firstName) + \(lastName)"
+        cell.textLabel?.text = "\(firstName) \(lastName)"
         
         return cell
     }

@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="okw-DH-pVz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="132" width="414" height="764"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" textLabel="ARa-Nt-o7E" style="IBUITableViewCellStyleDefault" id="jga-iv-O2x">
@@ -82,13 +82,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rch-jq-NvJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="okw-DH-pVz" secondAttribute="bottom" id="U7E-M0-MlO"/>
-                            <constraint firstItem="okw-DH-pVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V14-Ki-Ves"/>
-                            <constraint firstItem="okw-DH-pVz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="alv-jp-nY5"/>
-                            <constraint firstItem="okw-DH-pVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fYa-Jm-6l8"/>
+                            <constraint firstItem="okw-DH-pVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1l7-Ro-iLj"/>
+                            <constraint firstItem="okw-DH-pVz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="AuI-6l-9MH"/>
+                            <constraint firstItem="okw-DH-pVz" firstAttribute="top" secondItem="rch-jq-NvJ" secondAttribute="bottom" id="DHF-7e-jdn"/>
+                            <constraint firstItem="okw-DH-pVz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kkc-YH-SPk"/>
+                            <constraint firstAttribute="bottom" secondItem="okw-DH-pVz" secondAttribute="bottom" id="Kov-2S-Ncl"/>
+                            <constraint firstItem="rch-jq-NvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RPs-kG-euu"/>
+                            <constraint firstItem="rch-jq-NvJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YfF-MT-1Fk"/>
+                            <constraint firstItem="rch-jq-NvJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pnc-R2-fVb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -99,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="-554"/>
+            <point key="canvasLocation" x="1953.6231884057972" y="-554.46428571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HQC-8e-tWK">
