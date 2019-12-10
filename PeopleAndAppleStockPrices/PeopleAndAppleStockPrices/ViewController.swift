@@ -94,7 +94,7 @@ extension ViewController: UISearchBarDelegate {
             return
         }
         
-        //filterdText(searchText)
+        filterdText(searchText)
     }
     
 }
