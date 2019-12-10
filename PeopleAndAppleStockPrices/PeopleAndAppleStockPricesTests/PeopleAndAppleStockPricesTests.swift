@@ -61,6 +61,19 @@ let ext = "json"
      
     }
     
+    func testAmountOfStocksData() {
+        
+        //arrange
+      //  let data = Bundle.main.url(forResource: filename, withExtension: ext )
+        
+        //act
+      //  let stocks = Stock.getStocks(from: data)
+        
+        //assert
+       // XCTAssertGreaterThan(stocks, 0, "The amount of stocks is \(stocks.count)")
+        
+    }
+    
     // testdrivedevelopment
     
 }

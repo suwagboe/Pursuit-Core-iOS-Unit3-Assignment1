@@ -9,6 +9,8 @@
 import UIKit
 
 class SecondDetailViewController: UIViewController {
+    
+  //  var stock: stock?  // this should hold the selected stock
 
     override func viewDidLoad() {
         super.viewDidLoad()
