@@ -12,30 +12,45 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
-    
+    var allUsers = [UserInfo](){
+        didSet{
+            // when allUsers gets assigned the tableView should load..
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  tableView.dataSource = self
+        tableView.dataSource = self
     }
     
     func loadData() {
-        
+        allUsers = UserInfo.getUserInfo()
     }
-    
-    
+   
 }
 
 
-//extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return allUsers.count
+    }
     
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//
-//    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        // you should only use the guard let on custom cells??
+        
+         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+
+        let selectedUser = allUsers[indexPath.row]
+        
+        let firstName = selectedUser.name.first
+        let lastName = selectedUser.name.last
+        
+        cell.textLabel?.text = "\(firstName) + \(lastName)"
+        
+        return cell
+    }
     
-//}
+}
