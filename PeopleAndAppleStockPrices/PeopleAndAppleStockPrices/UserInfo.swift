@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct UserData: Codable {
-    let results: UserInfo
+struct User: Codable {
+    let results: [UserInfo]
 }
 
 struct UserInfo: Codable {
@@ -37,3 +37,22 @@ struct Picture: Codable {
 //name of the contact and their locatio
 //A UIImage with the default profile image
 //At least three labels to hold more information from the contact
+
+extension UserInfo{
+    static func getUserInfo() -> [UserInfo] {
+        var userInfo = [UserInfo]()
+        
+    guard let fileUrl = Bundle.main.url(forResource: "userinfo", withExtension: "json") else {
+           fatalError("couldn't locate the file")
+       }
+       do {
+          let data = try Data(contentsOf: fileUrl)
+           let specificUser = try JSONDecoder().decode(User.self, from: data)
+        // this wrong and I dont know why... 
+        userInfo = specificUser.results
+       } catch {
+           fatalError("passing info from json file doesn't work \(error)")
+       }
+        return userInfo
+    }
+}
