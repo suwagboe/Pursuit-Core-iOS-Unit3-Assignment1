@@ -33,6 +33,13 @@ loadData()
         allStocks = Stock.getStocks()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let secondDVC = segue.destination as? SecondDetailViewController, let indexPath = tableview.indexPathForSelectedRow  else {
+            fatalError("need to double check the segue")
+        }
+        secondDVC.stock = allStocks[indexPath.row]
+    }
+    
 }
 
 extension secondViewController: UITableViewDataSource {
