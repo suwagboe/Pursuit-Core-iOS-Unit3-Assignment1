@@ -10,6 +10,12 @@ import UIKit
 
 class SecondDetailViewController: UIViewController {
     
+    @IBOutlet weak var stockImage: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var openingPriceLabel: UILabel!
+    @IBOutlet weak var closingPriceLabel: UILabel!
+    // the image and the background color need to change based if the stock grew or not.
+    
     var stock: Stock?  // this should hold the selected stock
 
     override func viewDidLoad() {

@@ -25,6 +25,7 @@ extension Stock {
         
         guard let fileUrl = Bundle.main.url(forResource: "applstockinfo", withExtension: "json") else {
             fatalError("could not locate the file")
+            
         }
         do {
             // gets the actual data
@@ -37,7 +38,20 @@ extension Stock {
             // why is it making me do .self
             fatalError("developer Error: \(error)")
         }
+        
         return aStock
     }
     
-}
+    static func getAverage() {
+        
+    }
+    
+//    static func getMonthsByTheYear() ->[[Stock]] {
+//
+//        let allStocks = Stock.getStocks()
+//
+//     //   let sortedStocks =
+//        }
+        
+    }
+

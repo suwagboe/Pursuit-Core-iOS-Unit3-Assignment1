@@ -20,6 +20,7 @@ class secondViewController: UIViewController {
     }
     
     // should filter the stocks ..
+    // use game of thrones as a reference
     
     // stocks should show the date and opening stock price ! subtitle cell
     // tableview needs to have sections by month and by year 
@@ -60,6 +61,15 @@ extension secondViewController: UITableViewDataSource {
         
         //
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+         
+        return allStocks[section].label
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return allStocks.count
     }
     
 }
