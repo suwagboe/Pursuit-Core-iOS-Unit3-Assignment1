@@ -20,8 +20,26 @@ class SecondDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+configureUI()
+    }
+    
+    func configureUI() {
+        
+        guard let stock = stock else {
+            fatalError("The segue is not correct please double check everything is right.")
+        }
+     //   stockImage.image = 
+        dateLabel.text = stock.date
+        openingPriceLabel.text = stock.open.description
+        closingPriceLabel.text = stock.close.description
+        
+        if stock.changePercent < 0 {
+            stockImage.image = UIImage(named: "thumbsDown" )
+            self.view.backgroundColor = .red
+        }else {
+            stockImage.image = UIImage(named: "thumbsUp")
+            self.view.backgroundColor = .green
+        }
     }
     
 

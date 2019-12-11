@@ -12,6 +12,9 @@ struct Stock: Codable {
     let label: String // the readable format of the date
     let open: Double // where the stock opened at
     let date: String // the number equivalent of the date.
+    let changePercent: Double
+    let close: Double
+    
 }
 
 // getStocks

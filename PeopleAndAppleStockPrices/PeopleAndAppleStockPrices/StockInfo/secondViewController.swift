@@ -57,7 +57,7 @@ extension secondViewController: UITableViewDataSource {
         let selectedStock = allStocks[indexPath.row]
         
         cell.textLabel?.text = selectedStock.date
-        cell.detailTextLabel?.text = selectedStock.label
+        cell.detailTextLabel?.text = selectedStock.open.description
         
         //
         return cell
